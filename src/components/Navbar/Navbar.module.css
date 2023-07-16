@@ -1,0 +1,40 @@
+.navbarContainer {
+  width: 80%;
+  height: 110px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoImg {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.navList {
+    color: black;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.navList li {
+    list-style-type: none;
+}
+
+.navBarsIcon {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.navBarsIcon:hover {
+  color: rgba(85, 249, 82, 0.438);
+  transition: ease-in .2s;
+}

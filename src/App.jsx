@@ -3,6 +3,7 @@ import MainLayout from "./layouts/MainLayout";
 import HeroSection from "./components/first-section/HeroSection";
 import CardsSection from "./components/second-section/CardsSection";
 import CarouselSection from "./components/third-section/CarouselSection";
+import DownloadAppSection from "./components/fourth-section/DownloadAppSection";
 import "./App.css";
 
 function App() {
@@ -10,9 +11,10 @@ function App() {
     <>
       <ConfigProvider direction="rtl">
         <MainLayout>
-          <HeroSection />
-          <CardsSection />
-          <CarouselSection />
+            <HeroSection />
+            <CardsSection />
+            <CarouselSection />
+            <DownloadAppSection />
         </MainLayout>
       </ConfigProvider>
     </>

@@ -1,17 +1,25 @@
 .cardsSectionContainer {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cardsSectionTitle {
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: green;
 }
 
 .card {
   text-align: center;
   height: 250px;
+  margin-bottom: 1rem;
 }
 
 .card img {
@@ -22,5 +30,4 @@
 
 .card p {
   margin-top: 2rem;
-
 }

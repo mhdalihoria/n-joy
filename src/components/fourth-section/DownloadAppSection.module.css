@@ -1,0 +1,63 @@
+.appSectionContainer {
+    width: 80%;
+    height: 400px ;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-around;
+    background: #000000;
+    /* background: #1D881B; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.phoneImgContainer {
+    margin-top: 3rem;
+
+}
+
+.phoneImg {
+    width: 300px;
+   
+}
+
+.contentContainer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    flex-direction: column;
+    width: 280px;
+    margin-top: 2rem;
+}
+
+.contentHeader {
+    font-size: 3rem;
+    line-height: .8em;
+    margin-bottom: 1rem;
+}
+
+.contentText {
+    letter-spacing: 2px;
+    font-weight: 300;
+    padding-right: 2em;
+}
+
+
+.iconSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 120px;
+    margin-top: 0;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.01);
+    transition: transform 0.5s;
+}

@@ -7,9 +7,6 @@ import CustomFooter from "../components/Footer/CustomFooter";
 
 const MainLayout = ({ children }) => {
   const contentStyle = {
-    textAlign: "center",
-    minHeight: "55vh",
-    lineHeight: "120px",
     color: "black",
     backgroundColor: "#fff",
   };

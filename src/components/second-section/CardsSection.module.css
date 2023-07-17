@@ -1,0 +1,26 @@
+.cardsSectionContainer {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.card {
+  text-align: center;
+  height: 250px;
+}
+
+.card img {
+  width: 80px;
+  max-height: 80px;
+  object-fit: fill;
+}
+
+.card p {
+  margin-top: 2rem;
+
+}

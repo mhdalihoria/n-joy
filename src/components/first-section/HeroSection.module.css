@@ -1,0 +1,19 @@
+.heroContainer {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroRightSection {
+    max-width: 300px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.heroLeftSection {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(3, 185, 79);
+}

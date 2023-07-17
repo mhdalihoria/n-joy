@@ -1,8 +1,9 @@
 import { ConfigProvider } from "antd";
 import MainLayout from "./layouts/MainLayout";
 import HeroSection from "./components/first-section/HeroSection";
-import "./App.css";
 import CardsSection from "./components/second-section/CardsSection";
+import CarouselSection from "./components/third-section/CarouselSection";
+import "./App.css";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <MainLayout>
           <HeroSection />
           <CardsSection />
+          <CarouselSection />
         </MainLayout>
       </ConfigProvider>
     </>

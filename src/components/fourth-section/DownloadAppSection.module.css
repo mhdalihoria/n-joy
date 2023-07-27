@@ -16,7 +16,7 @@
 }
 
 .phoneImg {
-    width: 300px;
+    width: 170px;
    
 }
 
@@ -25,11 +25,11 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    text-align: left;
     flex-direction: column;
     width: 280px;
     margin-top: 2rem;
 }
+
 
 .contentHeader {
     font-size: 3rem;
@@ -40,7 +40,7 @@
 .contentText {
     letter-spacing: 2px;
     font-weight: 300;
-    padding-right: 2em;
+    font-size: 1rem;
 }
 
 
@@ -60,4 +60,18 @@
 .icon:hover {
     transform: scale(1.01);
     transition: transform 0.5s;
+}
+
+
+.txtAlignLeft {
+    text-align: left;
+}
+.txtAlignRight {
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .phoneImgContainer {
+        display: none;
+    }
 }

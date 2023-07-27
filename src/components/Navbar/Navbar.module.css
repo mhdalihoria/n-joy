@@ -16,25 +16,120 @@
 }
 
 .navList {
-    color: black;
-    display: flex;
-    width: 250px;
-    justify-content: space-between;
-    cursor: pointer;
+  color: black;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  cursor: pointer;
 }
 .navList li {
-    list-style-type: none;
+  list-style-type: none;
+  position: relative;
+}
+
+.navList li .navLink {
+  color: black;
+}
+
+.navList li .navLink:hover {
+  color: #1cf81a;
 }
 
 .navBarsIcon {
-    background-color: transparent;
-    border: none;
-    padding: 5px;
-    font-size: 1.3rem;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
 
 .navBarsIcon:hover {
   color: rgba(85, 249, 82, 0.438);
-  transition: ease-in .2s;
+  transition: ease-in 0.2s;
+}
+
+.navDrawer {
+  position: relative;
+}
+
+.navLinkDrawer {
+  display: block;
+  color: black;
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  z-index: 2;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.navLinkDrawer:hover {
+  color: rgba(85, 249, 82, 0.473);
+}
+
+.drawerImg {
+  position: absolute;
+  top: -10px;
+  width: 100px;
+  height: 100px;
+}
+
+.leftZero{
+  left: 20px;
+
+}
+
+.rightZero{
+  right: 20px;
+}
+
+.drawerBgImg {
+  position: absolute;
+  bottom: 0;
+  z-index: 0
+}
+
+.lang {
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  height: 40px;
+  align-self: center;
+  border-radius: 5px;
+  
+}
+
+
+.langDrawer {
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 1rem;
+  position: relative;
+  margin-left: 1rem;
+  z-index: 2
+}
+ 
+.lang:hover, .langDrawer:hover {
+  color: black;
+  background: white;
+  border: 1px solid black;
+  transition: background .4s ease-out;
+}
+
+.txtAlignLeft {
+  text-align: left;
+}
+
+.txtAlignRight {
+  text-align: right;
 }

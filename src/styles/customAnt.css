@@ -1,6 +1,28 @@
 /*** WE USE THIS FILE TO OVERRIDE DEFAULT ANT DESIGN'S DEFAULT STYLES ***/
 
-
 .ant-layout {
-    background-color: white;
+  background-color: white;
+}
+/* 
+.ant-carousel .slick-list .slick-slide > div > div {
+    display: block;
+} */
+
+.ant-carousel .slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-col-md-12 {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-drawer .ant-drawer-header {
+  border: none;
+}
+
+.ant-drawer-close {
+  padding-top: 1rem;
+  z-index: 2;
 }

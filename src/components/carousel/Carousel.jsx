@@ -1,8 +1,7 @@
 import { Carousel } from "antd";
 import "./CarouselStyles.css";
 
-function CustomCarousel() {
-
+function CustomCarousel({ srcArr }) {
   return (
     <Carousel
       autoplay
@@ -15,18 +14,28 @@ function CustomCarousel() {
       centerMode
       centerPadding="20px"
       dots
+      responsive={[
+        {
+          breakpoint: "787px",
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+          },
+        },
+      ]}
     >
       <div>
         <img
-          src="https://raivapp.com/asset/img/slider-3.png"
+          src={srcArr[0]}
           alt="profile-img"
           className="carousel-item"
           id="item-1"
         />
       </div>
-      <div>
+      <div style={{ display: "block" }}>
         <img
-          src="https://raivapp.com/asset/img/slider-3.png"
+          src={srcArr[1]}
           alt="profile-img"
           className="carousel-item"
           id="item-2"
@@ -34,7 +43,7 @@ function CustomCarousel() {
       </div>
       <div>
         <img
-          src="https://raivapp.com/asset/img/slider-3.png"
+          src={srcArr[2]}
           alt="profile-img"
           className="carousel-item"
           id="item-3"
@@ -42,7 +51,15 @@ function CustomCarousel() {
       </div>
       <div>
         <img
-          src="https://raivapp.com/asset/img/slider-3.png"
+          src={srcArr[3]}
+          alt="profile-img"
+          className="carousel-item"
+          id="item-4"
+        />
+      </div>
+      <div>
+        <img
+          src={srcArr[4]}
           alt="profile-img"
           className="carousel-item"
           id="item-4"

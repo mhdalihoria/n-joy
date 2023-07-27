@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import "./MainLayoutStyling.css";
 import CustomFooter from "../components/Footer/CustomFooter";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children, setIsEnglish, isEnglish }) => {
   const contentStyle = {
     color: "black",
     backgroundColor: "#fff",
@@ -16,12 +16,12 @@ const MainLayout = ({ children }) => {
     color: "#fff",
     backgroundColor: "#7dbcea",
     height: "200px",
-    padding: 0
+    padding: 0,
   };
   return (
     <Layout>
       <Header className={"header"}>
-        <Navbar />
+        <Navbar setIsEnglish={setIsEnglish} isEnglish={isEnglish}/>
       </Header>
       <Content style={contentStyle}>{children}</Content>
       <Footer style={footerStyle}>
@@ -33,6 +33,8 @@ const MainLayout = ({ children }) => {
 
 MainLayout.propTypes = {
   children: PropTypes.node.isRequired,
+  setIsEnglish: PropTypes.bool.isRequired,
+  isEnglish: PropTypes.bool.isRequired,
 };
 
 export default MainLayout;

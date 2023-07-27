@@ -5,16 +5,21 @@ import CardsSection from "./components/second-section/CardsSection";
 import CarouselSection from "./components/third-section/CarouselSection";
 import DownloadAppSection from "./components/fourth-section/DownloadAppSection";
 import "./App.css";
+import { ParallaxProvider } from "react-scroll-parallax";
+import { useState } from "react";
 
 function App() {
+  const [isEnglish, setIsEnglish] = useState(true)
   return (
     <>
-      <ConfigProvider direction="rtl">
-        <MainLayout>
-            <HeroSection />
+      <ConfigProvider direction={isEnglish ? "ltr" : "rtl"}>
+        <MainLayout setIsEnglish={setIsEnglish} isEnglish={isEnglish}>
+          <ParallaxProvider>
+            <HeroSection isEnglish={isEnglish}/>
             <CardsSection />
             <CarouselSection />
-            <DownloadAppSection />
+            <DownloadAppSection isEnglish={isEnglish}/>
+          </ParallaxProvider>
         </MainLayout>
       </ConfigProvider>
     </>

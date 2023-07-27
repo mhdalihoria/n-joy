@@ -1,19 +1,127 @@
 .heroContainer {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.heroRightSection {
+  max-width: 400px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  order: 2;
+}
+
+.heroRightTitle {
+  color: #1cf81a;
+}
+
+.heroRightSection span {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.heroLeftSection {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  order: 1;
+  margin-bottom: 2rem;
+}
+
+.phoneImg {
+  width: 300px;
+  position: absolute;
+}
+
+.carImg {
+  width: 420px;
+  position: absolute;
+  left: 110px;
+  top: calc(50%-50px);
+}
+
+@media (min-width: 1100px) {
+  .heroContainer {
     width: 75%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    flex-direction: row;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-.heroRightSection {
-    max-width: 300px;
-    text-align: center;
+  .heroLeftSection {
+    /* order: 2; */
+    margin-bottom: 2rem;
+  }
+
+  .heroRightSection {
     font-size: 2rem;
-}
+    /* order: 1; */
+    background: white;
+  }
 
-.heroLeftSection {
+  .heroLeftSection {
     width: 400px;
     height: 500px;
-    background-color: rgb(3, 185, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  .phoneImg {
+    width: 270px;
+    position: absolute;
+    height: 504px;
+  }
+
+
+  .carImg {
+    width: 380px;
+    position: absolute;
+    left: 90px;
+    top: calc(50%-50px);
+    /* position: relative;
+    z-index: 2; */
+  }
+}
+
+@media (max-width: 600px) {
+  .heroLeftSection {
+    width: 300px;
+    height: 400px;
+  }
+
+  .phoneImg {
+    width: 200px;
+    position: absolute;
+    top: 0;
+  }
+
+  .carImg {
+    width: 250px;
+    left: 90px;
+  }
+}
+
+.txtAlignLeft {
+  text-align: left;
+}
+.txtAlignRight {
+  text-align: right;
 }
